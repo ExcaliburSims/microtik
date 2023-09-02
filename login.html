@@ -19,7 +19,7 @@
 
 -->
 
-    $(if chap-id)
+   <!--  $(if chap-id)
     <form name="sendin" action="$(link-login-only)" method="post" style="display:none">
         <input type="hidden" name="username" />
         <input type="hidden" name="password" />
@@ -37,12 +37,12 @@
         }
 
     </script>
-    $(endif)
+    $(endif) -->
     <div class="ie-fixMinHeight">
         <div class="main">
             <div class="wrap animated fadeIn">
                 <form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()"
-                    $(endif)>
+                    $(endif) class="box-container">
                     <input type="hidden" name="dst" value="$(link-orig)" />
                     <input type="hidden" name="popup" value="true" />
 
@@ -55,7 +55,7 @@
                             fill="#E40614" />
                     </svg>
 
-                    <p class="info $(if error)alert$(endif)">
+                    <!-- <p class="info $(if error)alert$(endif)">
                         $(if error == "")Please log in to use the internet hotspot service $(if trial ==
                         'yes')<br />Free trial available, <a
                             href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">click
@@ -63,7 +63,7 @@
                         $(endif)
 
                         $(if error)$(error)$(endif)
-                    </p>
+                    </p> -->
                     <label>
                         <img class="ico" src="img/user.svg" alt="#" />
                         <input name="username" type="text" value="$(username)" placeholder="Username" />
@@ -77,7 +77,7 @@
                     <input type="submit" value="Connect" />
 
                 </form>
-                <p class="info bt">Powered by MikroTik RouterOS</p>
+                <p class="info bt">Powered by Microcom RouterOS</p>
 
             </div>
         </div>
