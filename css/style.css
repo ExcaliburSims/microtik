@@ -30,6 +30,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -38,7 +39,7 @@ a {
     color: #486173
 }
 
-input,
+/* input,
 label {
     vertical-align: middle;
     white-space   : normal;
@@ -49,7 +50,29 @@ label {
 label {
     position: relative;
     display : block
-}
+} */
+
+.box {
+    margin: 10px 0;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    color: #ececec;
+    margin: 5px 0;
+  }
+  
+  input {
+    padding: 8px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: transparent;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.137);
+  }
 
 p::first-letter {
     text-transform: uppercase

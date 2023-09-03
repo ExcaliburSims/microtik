@@ -64,7 +64,17 @@
 
                         $(if error)$(error)$(endif)
                     </p> -->
-                    <label>
+                    <div class="box">
+                        <label for="password">Username</label>
+                        <img class="ico" src="img/user.svg" alt="#" />
+                        <input name="username" type="text" value="$(username)" placeholder="Username" />
+                    </div>
+                    <div class="box">
+                        <label for="password">Password</label>
+                        <img class="ico" src="img/password.svg" alt="#" />
+                        <input name="password" type="password" placeholder="Password" />
+                    </div>
+                    <!-- <label>
                         <img class="ico" src="img/user.svg" alt="#" />
                         <input name="username" type="text" value="$(username)" placeholder="Username" />
                     </label>
@@ -72,7 +82,7 @@
                     <label>
                         <img class="ico" src="img/password.svg" alt="#" />
                         <input name="password" type="password" placeholder="Password" />
-                    </label>
+                    </label> -->
 
                     <input type="submit" value="Connect" />
 
